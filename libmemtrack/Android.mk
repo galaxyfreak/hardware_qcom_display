@@ -21,6 +21,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_VENDOR_MODULE := true
 LOCAL_C_INCLUDES += hardware/libhardware/include
+LOCAL_CFLAGS += -Wno-error
 LOCAL_SHARED_LIBRARIES := liblog
 LOCAL_SRC_FILES := memtrack_msm.c kgsl.c
 LOCAL_MODULE := memtrack.$(TARGET_BOARD_PLATFORM)
